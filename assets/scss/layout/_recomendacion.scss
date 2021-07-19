@@ -1,0 +1,48 @@
+.recomendacion{
+    .contenedorUno{
+        text-align: center;
+        &__image{
+            width: 177px;
+            border-radius: 100%;
+            border: 1px solid $light-gray;
+        }
+    }
+    .contenedorDos{
+        text-align: center;
+        &__nombre{
+            font-family: $fuentePlayFair;
+            font-size: $x-large;
+            color: $eerie-black;
+            font-style: $styleItalic;
+        }
+        &__user{
+            font-family: $fuenteRoboto;
+            font-size: $large;
+            color: $ruddy-pink;
+            @include font-weight(extra-light);
+            display: block;
+        }
+    }
+    .contenedorTres{
+        display: none;
+        &__parrafo{
+            font-family: $fuenteRoboto;
+            font-size: $medium;
+            color: $nickel;
+            @include font-weight(extra-light);
+            line-height: 2;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .contenedorUno{
+        text-align: unset;
+    }
+    .contenedorDos{
+        text-align: unset;
+    }
+    .contenedorTres{
+        display: revert !important;
+    }
+}

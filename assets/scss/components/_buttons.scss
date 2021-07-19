@@ -1,0 +1,52 @@
+.textoParrafos{
+    &__buttonxs{
+        display: inline-block;
+        width: 100px;
+        margin: 30px 0;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 35px;
+        color: $white;
+        background-color: $nickel;
+        padding: 10px;
+        font-family: $fuenteRoboto;
+        font-size: 14px;
+        margin-right: 20px;
+        @include font-weight(regular);
+        &:hover{
+            text-decoration: none;
+            color: $white;
+        }
+    }
+    &__buttonlg{
+        display: inline-block;
+        width: 160px;
+        margin: 30px 0;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 35px;
+        color: $white;
+        background-color: $nickel;
+        padding: 10px;
+        font-family: $fuenteRoboto;
+        font-size: 14px;
+        @include font-weight(regular);
+        &:hover{
+            text-decoration: none;
+            color: $white;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .textoParrafos__buttonxs{
+        width: 115px;
+        padding: 15px;
+        font-size: $medium;
+    }
+    .textoParrafos__buttonlg{
+        width: 188px;
+        padding: 15px;
+        font-size: $medium;
+    }
+}

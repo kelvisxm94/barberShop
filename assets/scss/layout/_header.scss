@@ -1,0 +1,25 @@
+.header{
+    background-image: url(../images/post-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        text-align: center;
+        font-family: $fuentePlayFair;
+        font-style: $styleItalic;
+        font-size: $x-large;
+        color: $white;
+        @include font-weight(extra);
+    }
+}
+
+@media (min-width: 992px){
+    .header__titulo{
+        height: 100vh;
+        text-align: unset;
+        font-size: $xx-large;
+    }
+}

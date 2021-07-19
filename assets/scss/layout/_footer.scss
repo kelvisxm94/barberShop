@@ -1,0 +1,9 @@
+.footer{
+    background-color: $eerie-black;
+    padding: 30px;
+    &__image{
+        width: 20%;
+        display: block;
+        @include m-auto();
+    }
+}
